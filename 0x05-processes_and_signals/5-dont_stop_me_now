@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This is a Bash script that stops '4-to_infinity_and_beyond process' using kill
+
+while true; do
+        echo "To infinity and beyond"
+done &
+
+PID=$!
+read -n 1 -s
+kill $PID
